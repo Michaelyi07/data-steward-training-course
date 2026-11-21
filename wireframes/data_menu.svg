@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="Microsoft YaHei, sans-serif">
+  <rect width="900" height="520" fill="#F7F9FC"/>
+  <rect x="0" y="0" width="900" height="54" fill="#1F3A5F"/>
+  <text x="24" y="35" fill="#FFFFFF" font-size="19">员工工作台</text>
+  <text x="120" y="35" fill="#AFC2DA" font-size="14">数据</text>
+  <rect x="24" y="82" width="852" height="410" rx="8" fill="#FFFFFF" stroke="#D6DFEA"/>
+  <text x="48" y="120" fill="#1F3A5F" font-size="17" font-weight="bold">数据菜单 · 六入口</text>
+  <g fill="#FFFFFF" stroke="#4A6FA5" stroke-width="1.5">
+    <rect x="48" y="148" width="248" height="86" rx="6"/>
+    <rect x="326" y="148" width="248" height="86" rx="6"/>
+    <rect x="604" y="148" width="248" height="86" rx="6"/>
+    <rect x="48" y="268" width="248" height="86" rx="6"/>
+    <rect x="326" y="268" width="248" height="86" rx="6"/>
+    <rect x="604" y="268" width="248" height="86" rx="6"/>
+  </g>
+  <g fill="#263445" font-size="16" text-anchor="middle">
+    <text x="172" y="188">导入中心</text><text x="172" y="212" font-size="12" fill="#6B7A8C">模板·校验·失败行</text>
+    <text x="450" y="188">查重合并</text><text x="450" y="212" font-size="12" fill="#6B7A8C">确定·疑似·撤销</text>
+    <text x="728" y="188">字段字典</text><text x="728" y="212" font-size="12" fill="#6B7A8C">口径·必填·枚举</text>
+    <text x="172" y="308">数据质量报告</text><text x="172" y="332" font-size="12" fill="#6B7A8C">完整·重复·过期</text>
+    <text x="450" y="308">导出审批</text><text x="450" y="332" font-size="12" fill="#6B7A8C">审批·水印·范围</text>
+    <text x="728" y="308">操作审计</text><text x="728" y="332" font-size="12" fill="#6B7A8C">留痕·可追溯</text>
+  </g>
+  <text x="48" y="404" fill="#6B7A8C" font-size="13">线框示意 · 全虚构 · 不出现客户名与真实数据</text>
+  <text x="48" y="458" fill="#C8791A" font-size="12">工作主线：字典 → 导入 → 查重合并 → 质量报告 → 导出审批 → 操作审计</text>
+</svg>

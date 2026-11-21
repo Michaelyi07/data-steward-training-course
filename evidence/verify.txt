@@ -1,0 +1,26 @@
+[PASS] C1-pages 25-30 — slides=28
+[PASS] C1-notes json 28 entries — count=28
+[PASS] C1-notes embedded in pptx — with_notes=28
+[PASS] C1-page ids P01-P28 bound
+[PASS] C2-confirmed rule (USCC same)
+[PASS] C2-suspected rule (name normalized)
+[PASS] C2-manual review stated
+[PASS] C2-30 day undo + over-window approval
+[PASS] C2-3 drills with answer paths
+[PASS] C3-object 会员企业
+[PASS] C3-object 联系人
+[PASS] C3-object 能力卡
+[PASS] C3-object 需求卡
+[PASS] C3-object 商机
+[PASS] C3-object 活动参与
+[PASS] C3-unique SoR rule
+[PASS] C3-soft delete excluded from quality, kept in audit
+[PASS] C4-no client name
+[PASS] C4-no real-looking USCC — hits=[]
+[PASS] C4-no real phone number — hits=[]
+[PASS] C4-synthetic register exists
+[PASS] C4-masked phone samples
+[PASS] C4-export approval + watermark
+[PASS] wireframes 4 svg source files — count=4
+
+TOTAL: 24/24 passed

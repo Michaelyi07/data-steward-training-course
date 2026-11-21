@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="Microsoft YaHei, sans-serif">
+  <rect width="900" height="520" fill="#F7F9FC"/>
+  <text x="30" y="42" fill="#1F3A5F" font-size="18" font-weight="bold">导出审批与文件水印 · 线框（全虚构）</text>
+  <rect x="30" y="72" width="520" height="400" rx="8" fill="#FFFFFF" stroke="#D6DFEA"/>
+  <text x="50" y="106" fill="#1F3A5F" font-size="15" font-weight="bold">导出申请单</text>
+  <g fill="#263445" font-size="13">
+    <text x="50" y="146">申请人：op_007（虚构工号）</text>
+    <text x="50" y="180">审批人：mgr_003（虚构工号）</text>
+    <text x="50" y="214">审批单号：EXP-20261120-007（虚构）</text>
+    <text x="50" y="248">数据范围：org_fict_001 / site_fict_001</text>
+    <text x="50" y="282">用途：季度会员结构复盘（虚构）</text>
+    <text x="50" y="316">手机号展示：****5678（默认打码）</text>
+    <text x="50" y="366" fill="#C8791A">未审批一律拒绝 · 明文查看需更高权限并留痕</text>
+  </g>
+  <rect x="576" y="72" width="294" height="400" rx="8" fill="#FFFFFF" stroke="#C8791A"/>
+  <text x="596" y="106" fill="#C8791A" font-size="15" font-weight="bold">导出文件水印预览</text>
+  <g fill="#6B7A8C" font-size="12">
+    <text x="596" y="158">导出人: op_007</text>
+    <text x="596" y="182">时间: 2026-11-20T10:35Z</text>
+    <text x="596" y="206">审批单: EXP-20261120-007</text>
+    <text x="596" y="230">范围: org_fict_001/site_fict_001</text>
+    <text x="596" y="254">用途: 季度复盘（虚构）</text>
+    <text x="596" y="278">序列: SN-FICT-000017</text>
+    <text x="596" y="302">页码: 3 / 12</text>
+  </g>
+  <rect x="596" y="336" width="254" height="100" rx="4" fill="#F7F9FC" stroke="#D6DFEA"/>
+  <text x="610" y="372" fill="#6B7A8C" font-size="12">星海科技（虚构）　****5678</text>
+  <text x="610" y="398" fill="#6B7A8C" font-size="12">云帆贸易（虚构）　****1234</text>
+  <text x="610" y="424" fill="#C8791A" font-size="11">水印用于追溯，不替代访问控制</text>
+</svg>
