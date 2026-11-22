@@ -37,10 +37,15 @@ D:/Program Files (x86)/Python313/python.exe tools/export_pdf.py
 
 - Layout: deep navy / slate / restrained orange accent, Microsoft YaHei, 16:9,
   one idea per page, CJK line-breaking (`eaLnBrk` / `hangingPunct`) on all paragraphs.
-- AI-flavor gate: FAIL=0 WARN=0; geometry gate: exit 0 (no overlap/overflow).
+- AI-flavor gate: FAIL=0 WARN=0; geometry gate: exit 0 (no overlap/overflow);
+  orphan-line gate: 0 hits (no lone character or punctuation on its own line;
+  flowchart 是/否 labels whitelisted).
+- No decorative short rule above page titles, no isolated accent blocks.
 - Subject-matter gate: independent reviewer verified all 8 chapters against the
   source knowledge card and client brief — PASS after fixing a rate-denominator
   contradiction and a placeholder-polluted object table.
+- Post-delivery visual review removed the title-rule decoration and fixed two
+  orphan-line cases (P02 "金额", P03 full stop); see evidence/render_fix/.
 - Desensitization: zero hits for client name / real 18-digit USCC / real mobile.
 
 ## Content boundaries

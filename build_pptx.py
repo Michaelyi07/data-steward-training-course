@@ -203,7 +203,7 @@ def frame(slide, pid, title, chapter, subtitle=""):
     text(slide, M, 0.26, 7.6, 0.32, "数据管理员培训 · " + chapter, 10, SLATE)
     text(slide, W - M - 4.6, 0.26, 4.6, 0.32, "主数据治理 · 培训课件",
          10, SLATE, align=PP_ALIGN.RIGHT)
-    rect(slide, M, 0.64, 0.22, 0.06, fill=ORANGE)
+    # Title band: no decorative short rule above the heading (AI-flavor discipline).
     text(slide, M, 0.78, CW, 0.52, title, 29, NAVY, True, line=1.02)
     if subtitle:
         text(slide, M, 1.32, CW, 0.32, subtitle, 12.5, SLATE, line=1.05)
@@ -247,8 +247,10 @@ def p02(s):
         card(s, cx, 1.95, 2.65, 0.86, t, d, tsize=15, bsize=12)
         if i < 3:
             arrow(s, cx + 2.70, 2.25, 0.26, 0.24)
-    card(s, 0.72, 3.00, 4.30, 0.86, "第八章 · AI 能力边界", "独立专题：建议进复核队列，不直写、不外发、不算金额",
-         tsize=15, bsize=12, accent=True)
+    # Wider body box so the last character does not wrap alone onto a second line;
+    # no accent block (decorative residue).
+    card(s, 0.72, 3.00, 4.62, 0.86, "第八章 · AI 能力边界", "独立专题：建议进复核队列，不直写、不外发、不算金额",
+         tsize=15, bsize=12)
     card(s, 6.82, 3.00, 2.65, 0.86, "导出审批", "涉及对外给数据时走这里", tsize=15, bsize=12)
     arrow(s, 9.53, 3.30, 0.26, 0.24)
     card(s, 9.87, 3.00, 2.65, 0.86, "操作审计", "所有关键动作都留痕", tsize=15, bsize=12)
@@ -276,7 +278,10 @@ def p03(s):
     for i, (t, d) in enumerate(items):
         cx = M + (i % 3) * 4.12
         cy = 1.92 + (i // 3) * 2.10
-        card(s, cx, cy, 3.85, 1.92, t, d, tsize=16, bsize=14)
+        # "需求卡" body would otherwise leave the full stop alone on a new line;
+        # a slightly smaller size keeps it on the same line (CJK punctuation rule).
+        bsize = 13.2 if t == "需求卡" else 14
+        card(s, cx, cy, 3.85, 1.92, t, d, tsize=16, bsize=bsize)
     band(s, M, 6.14, CW, 0.44,
          "后面所有导入、查重、质量核查，本质上都是在这六个对象上做文章。",
          14.5, NAVY, LIGHT)

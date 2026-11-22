@@ -51,3 +51,22 @@ Artifacts:
 data_steward_course.pptx 157278
 data_steward_course.pdf 737664
 notes_per_page.json 21075
+
+=== Post-delivery visual-fix round (2026-11-22) ===
+Owner review flagged three items; all fixed and re-verified:
+  (1) Removed the decorative orange short rule above every page title (AI-flavor).
+  (2) P02 "AI 能力边界": widened card 4.30->4.62in so the final "额" stays on
+      the same line inside the box; removed the isolated accent block.
+  (3) P03 "需求卡": body size 14->13.2pt so the trailing full stop stays on
+      the same line (grid kept at equal widths).
+$ python tools/orphan_line_gate.py
+  orphan-line gate: 0 hit(s)   exit_code=0
+$ python tools/verify.py
+  TOTAL: 24/24 passed        exit_code=0
+$ ai_flavor_gate / geometry_gate
+  FAIL=0 WARN=0 PASS / geometry gate exit 0
+$ export_pdf.py
+  PDF_OK 728874 bytes
+Visual re-inspection: evidence/render_fix/page_01.png, page_02.png, page_03.png.
+Method cards updated (reusable): 反AI味工程 §一/§四 (title-rule decoration),
+几何纪律机检 §二第4层 (orphan character/punctuation rule).
